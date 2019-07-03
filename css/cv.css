@@ -166,6 +166,20 @@ body {
         width: var(--w);
     }
 }
+.activity {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    margin: 0;
+    padding: 10px 10px 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.one {
+    text-align: center;
+}
 .footer {
     padding: 10px;
     grid-area: ft;
@@ -297,7 +311,7 @@ ul {
     }
     
     h4 {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
     
     h5 {
