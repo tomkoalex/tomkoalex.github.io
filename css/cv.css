@@ -40,7 +40,7 @@ body {
 .grid {
     width: 100%;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-areas: "hd hd hd hd hd hd hd hd hd hd hd hd" "sk mn mn mn mn mn mn mn mn mn mn mn" "ft ft ft ft ft ft ft ft ft ft ft ft";
 }
 .header {
@@ -251,6 +251,92 @@ li {
 ul {
     margin: 0;
     padding: 0 0 0 15px;
+}
+@media screen and (max-width: 600px) {
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "hd" "sk " "mn" "ft";
+    }
+    
+    .header {
+        background-image: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .photo {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .avatar {
+        margin: auto;
+    }
+    
+    .title {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .coords {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .skills {
+        display: inline;
+        text-align: center;
+    }
+    
+    .coords br {
+        display: none;
+    }
+    
+    .main {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .experience {
+        width: 100%;
+        grid-template-areas: "tm" "jd";
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .timeline {
+        width: 100%;
+    }
+    
+    .jobdata {
+        grid-template-areas: "re" "res" "da";
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .resp {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .results {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .data {
+        width: 100%;
+        text-align: center;
+    }
+    
+    li {
+        list-style-type: none;
+    }
 }
 @page {
     size: A4;
