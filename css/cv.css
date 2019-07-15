@@ -273,6 +273,7 @@ ul {
     
     .avatar {
         margin: auto;
+        border-radius: 50%;
     }
     
     .title {
