@@ -58,10 +58,15 @@ body {
     float: left;
     width: 18%;
 }
+.avatar {
+    display: block;
+    width: 150px;
+}
 .title {
-    padding: 15px 15px 5px 0px;
+    margin: auto;
+    padding: 15px 15px 0px 5px;
     float: left;
-    width: 59%;
+    width: 62%;
     text-align: center;
 }
 .name {
@@ -81,15 +86,12 @@ body {
     color: var(--p100);
 }
 .coords {
+    margin: 0%;
     padding: 15px 0px 5px 10px;
     float: right;
     color: var(--p200);
     font-weight: 200;
-    width: 21%;
-}
-.avatar {
-    display: block;
-    width: 150px;
+    width: 20%;
 }
 .main {
     padding: 10px;
@@ -251,7 +253,7 @@ ul {
     margin: 0;
     padding: 0 0 0 15px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .grid {
         width: 100%;
         display: grid;
@@ -269,10 +271,10 @@ ul {
         display: block;
         margin: auto;
         width: 100%;
-        border-radius: 50%;
     }
     
     .avatar {
+        border-radius: 50%;
         margin: auto;
     }
     
