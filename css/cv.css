@@ -181,6 +181,8 @@ body {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .footer {
+    color: var(--p100);
+    text-align: center;
     padding: 10px;
     grid-area: ft;
     height: 30px;
@@ -341,13 +343,10 @@ ul {
         list-style-type: none;
     }
 }
-@page {
-    size: A4;
-    margin: 0;
-}
 @media print {
     @page {
-        margin: 5mm;
+        size: A4;
+        margin: 20mm 5mm 20mm 5mm;
     }
     
     html,
@@ -364,11 +363,12 @@ ul {
     }
     
     .header {
-        background-color: #37474f !important;
+        background-image: none;
         border-bottom: 1px solid lightgrey;
     }
     
     .avatar {
+        transform: scale(0.8);
         border-radius: 50%;
         border: 1px solid lightgrey;
     }
@@ -382,6 +382,7 @@ ul {
     }
     
     .skills {
+        min-width: 4cm;
         border-right: 1px solid lightgrey;
     }
     
@@ -395,8 +396,14 @@ ul {
     }
     
     .footer {
+        padding: 5px;
         border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
+    }
+    
+    .about {
+        font-size: 14px !important;
+        font-weight: 300;
     }
     
     p {
@@ -404,7 +411,7 @@ ul {
     }
     
     h3 {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
     
     h4 {
