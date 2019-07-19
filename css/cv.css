@@ -348,13 +348,12 @@ ul {
 @media print {
     @page {
         size: A4;
-        margin: 20mm 5mm 20mm 5mm;
+        padding: 20mm 5mm 20mm 5mm;
     }
     
     html,
     body {
-        width: 210mm;
-        height: 297mm;
+        height 99%;
     }
     
     * {
