@@ -393,6 +393,7 @@ ul {
     }
     
     .experience {
+        padding: 0px;
         border-bottom: 1px solid lightgrey;
     }
     
@@ -437,6 +438,11 @@ ul {
     
     p {
         font-size: 12px !important;
+        padding: 0%;
+    }
+    
+    li {
+        padding: 0%;
     }
     
     h3 {
