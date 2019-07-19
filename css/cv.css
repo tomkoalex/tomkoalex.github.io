@@ -99,6 +99,9 @@ body {
     grid-area: mn;
     background-color: var(--p50);
 }
+.side {
+    margin-top: 15px;
+}
 .experience {
     width: 100%;
     display: grid;
@@ -348,12 +351,15 @@ ul {
 @media print {
     @page {
         size: A4;
-        padding: 20mm 5mm 20mm 5mm;
+        padding: 0mm;
+        margin: 0mm;
     }
     
     html,
     body {
-        height 99%;
+        width: 210mm;
+        height: 297mm;
+        padding: 5mm;
     }
     
     * {
@@ -375,7 +381,15 @@ ul {
     }
     
     .title {
-        padding: 15px 0px 5px 15px;
+        padding: 15px 10px 5px 15px;
+    }
+    
+    .coords {
+        padding: 15px 0px 5px 0px;
+    }
+    
+    .side {
+        margin-top: 15px !important;
     }
     
     .experience {
@@ -392,8 +406,22 @@ ul {
         -webkit-print-color-adjust: exact;
     }
     
+    .jobdata {
+        padding: 0 !important;
+        margin: 0%;
+    }
+    
     .data {
         padding: 0 !important;
+        margin: 0%;
+    }
+    
+    .timeline {
+        margin: 0;
+    }
+    
+    .resp {
+        margin: 0;
     }
     
     .footer {
@@ -413,10 +441,12 @@ ul {
     
     h3 {
         font-size: 16px !important;
+        margin: 0% !important;
     }
     
     h4 {
         font-size: 14px !important;
+        padding: 0% !important;
     }
     
     h5 {
@@ -432,4 +462,13 @@ ul {
         padding: 0 !important;
         margin: 0 !important;
     }
+    /*.nobreak {
+        page-break-before: auto;
+        page-break-after: auto;
+        page-break-inside: auto;
+    }
+    */
+    /*.print:last-child {
+        page-break-after: auto;
+    }*/
 }
