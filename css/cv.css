@@ -79,6 +79,7 @@ body {
     margin-bottom: 5px;
 }
 .about {
+    background-color: rgba(0, 0, 0, .5);
     text-indent: 20px;
     text-align: justify;
     text-justify: inter-word;
@@ -182,8 +183,9 @@ body {
 }
 .footer {
     color: var(--p100);
+    vertical-align: middle;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     grid-area: ft;
     height: 30px;
     background-color: var(--p900);
