@@ -302,7 +302,8 @@ ul {
 li{
     font-size: 10px;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1000px ) {
     .grid {
         width: 100%;
         display: grid;
@@ -386,6 +387,9 @@ li{
         width: 100%;
         text-align: center;
     }
+    .position{
+        text-align: center;
+    }
     
     .results {
         text-align: center;
@@ -400,6 +404,8 @@ li{
     li {
         list-style-type: none;
     }
+}
+
 }
 @media print {
     @page {
