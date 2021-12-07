@@ -305,7 +305,7 @@ li{
 
 @media screen and (max-width: 1000px ) {
     body {
-        font-size: 200%;
+        font-size: 300%;
     }
     .about{
         font-size: 100%;
@@ -323,6 +323,9 @@ li{
         font-size: 80%;
     }
     .result{
+        font-size: 100%;
+    }
+    h3{
         font-size: 100%;
     }
     h4{
@@ -350,6 +353,7 @@ li{
     .avatar {
         border-radius: 50%;
         margin: auto;
+        width: 100%;
     }
     
     .title {
@@ -515,6 +519,8 @@ li{
     }
     
     .footer {
+        position: relative;
+        bottom:  -500px;
         border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
     }
