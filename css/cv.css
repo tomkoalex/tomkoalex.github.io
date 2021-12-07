@@ -327,9 +327,13 @@ li{
     }
     h3{
         font-size: 100%;
+        border-weight: 1px;
+        border-color: var(--p200);
+        border-style: solid none;
     }
     h4{
         text-align: center;
+        font-size: 80%;
     }
     .grid {
         width: 100%;
@@ -343,11 +347,17 @@ li{
         display: flex;
         flex-wrap: wrap;
     }
+    .footer{
+        clear: both;
+        position: relative;
+        height: 250px;
+        margin-bottom: -100px;
+    }
     
     .photo {
         display: block;
         margin: auto;
-        width: 100%;
+        width: 50%;
     }
     
     .avatar {
@@ -409,7 +419,7 @@ li{
         border-radius: 50%;
         display: block;
         margin: 0 auto;
-        width: 50px;
+        width: 150px;
     }
     .resp {
         width: 100%;
@@ -519,8 +529,6 @@ li{
     }
     
     .footer {
-        position: relative;
-        bottom:  -500px;
         border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
     }
