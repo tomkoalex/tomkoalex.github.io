@@ -444,7 +444,6 @@ li{
     }
 }
 
-}
 @media print {
     @page {
         size: A4;
