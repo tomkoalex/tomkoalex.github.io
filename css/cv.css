@@ -304,6 +304,27 @@ li{
 }
 
 @media screen and (max-width: 1000px ) {
+    body {
+        font-size: 200%;
+    }
+    .about{
+        font-size: 100%;
+    }
+    .tline{
+        font-size: 80%;
+    }
+    .invert{
+        font-size: 50%;
+    }
+    p{
+        font-size: 80%;
+    }
+    .result{
+        font-size: 100%;
+    }
+    h4{
+        text-align: center;
+    }
     .grid {
         width: 100%;
         display: grid;
